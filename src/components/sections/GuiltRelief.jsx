@@ -1,6 +1,6 @@
 import Container from '../Container'
 import Reveal from '../Reveal'
-import ImagePlaceholder from '../ImagePlaceholder'
+import SystemVsSlip from '../illustrations/SystemVsSlip'
 import Button from '../Button'
 
 const paragraphs = [
@@ -21,10 +21,7 @@ export default function GuiltRelief() {
           </p>
         </Reveal>
         <Reveal delay={0.1} className="mx-auto mt-10 max-w-3xl">
-          <ImagePlaceholder
-            label="Иллюстрация: «Система vs Срыв» — минималистичная схема с двумя стрелками, цвета #2E5A4A и #F4A261"
-            ratio="16 / 7"
-          />
+          <SystemVsSlip />
         </Reveal>
         <div className="mx-auto mt-10 flex max-w-3xl flex-col gap-5">
           {paragraphs.map((p, i) => (
