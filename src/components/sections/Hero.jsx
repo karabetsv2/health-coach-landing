@@ -1,7 +1,7 @@
 import Container from '../Container'
 import Reveal from '../Reveal'
 import ImagePlaceholder from '../ImagePlaceholder'
-import EmailForm from '../EmailForm'
+import LeadForm from '../LeadForm'
 import { Check } from 'lucide-react'
 
 const bullets = [
@@ -35,8 +35,7 @@ export default function Hero() {
             ))}
           </ul>
           <div className="mt-8">
-            <EmailForm
-              ctaText="Записаться на бесплатный разбор рациона"
+            <LeadForm
               note="30 минут • Разберём ваш рацион • Дадим 3 рекомендации на неделю"
               id="signup"
             />

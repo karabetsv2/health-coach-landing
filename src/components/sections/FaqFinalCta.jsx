@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Container from '../Container'
 import Reveal from '../Reveal'
 import ImagePlaceholder from '../ImagePlaceholder'
-import EmailForm from '../EmailForm'
+import LeadForm from '../LeadForm'
 import { ChevronDown, Check } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 
@@ -138,11 +138,7 @@ export default function FaqFinalCta() {
               className="border-white/25 bg-white/10 [&_span]:text-white/70 [&_svg]:text-white/70"
             />
             <div className="mt-8 rounded-2xl bg-white p-6">
-              <EmailForm
-                ctaText="Записаться на бесплатный разбор рациона"
-                note={null}
-                id="signup-final"
-              />
+              <LeadForm note={null} id="signup-final" />
             </div>
           </Reveal>
         </Container>
