@@ -1,6 +1,6 @@
 import Container from '../Container'
 import Reveal from '../Reveal'
-import ImagePlaceholder from '../ImagePlaceholder'
+import Photo from '../Photo'
 import Button from '../Button'
 import { Check, X } from 'lucide-react'
 
@@ -31,8 +31,9 @@ export default function ForWhom() {
           </p>
         </Reveal>
         <Reveal delay={0.1} className="mx-auto mt-10 max-w-sm">
-          <ImagePlaceholder
-            label="Фото: женщина в офисе (35–45 лет)"
+          <Photo
+            src="/images/forwhom.jpg"
+            alt="Женщина 35–45 лет работает за ноутбуком"
             ratio="16 / 10"
           />
         </Reveal>

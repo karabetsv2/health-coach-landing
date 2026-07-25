@@ -1,6 +1,6 @@
 import Container from '../Container'
 import Reveal from '../Reveal'
-import ImagePlaceholder from '../ImagePlaceholder'
+import Photo from '../Photo'
 import Button from '../Button'
 import { UtensilsCrossed, Video, MessageCircle, NotebookPen, TrendingUp } from 'lucide-react'
 
@@ -44,8 +44,9 @@ export default function Solution() {
           </p>
         </Reveal>
         <Reveal delay={0.1} className="mx-auto mt-10 max-w-4xl">
-          <ImagePlaceholder
-            label="Горизонтальное фото: эксперт и клиентка на созвоне (скриншот Zoom). 1920×1080"
+          <Photo
+            src="/images/solution.jpg"
+            alt="Наставник по питанию за рабочим столом с ноутбуком и блокнотом"
             ratio="16 / 9"
           />
         </Reveal>

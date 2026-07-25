@@ -1,6 +1,6 @@
 import Container from '../Container'
 import Reveal from '../Reveal'
-import ImagePlaceholder from '../ImagePlaceholder'
+import Photo from '../Photo'
 import Button from '../Button'
 import { Check } from 'lucide-react'
 
@@ -15,8 +15,9 @@ export default function About() {
     <section className="bg-beige py-14 lg:py-20">
       <Container className="grid grid-cols-1 items-start gap-10 lg:grid-cols-2 lg:gap-14">
         <Reveal>
-          <ImagePlaceholder
-            label="Вертикальное фото: эксперт (Мария) в рабочей обстановке + фото «до/после» (без обработки). 800×1000"
+          <Photo
+            src="/images/about.jpg"
+            alt="Мария, наставник по питанию, в рабочей обстановке"
             ratio="4 / 5"
             className="mx-auto max-w-sm lg:sticky lg:top-24"
           />

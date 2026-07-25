@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Container from '../Container'
 import Reveal from '../Reveal'
-import ImagePlaceholder from '../ImagePlaceholder'
+import Photo from '../Photo'
 import LeadForm from '../LeadForm'
 import { ChevronDown, Check } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -132,10 +132,11 @@ export default function FaqFinalCta() {
             </p>
           </Reveal>
           <Reveal delay={0.15}>
-            <ImagePlaceholder
-              label="Фото: эксперт (Мария) в Zoom-окне, приглашающий жест. 1920×1080"
+            <Photo
+              src="/images/final-cta.jpg"
+              alt="Мария приглашает записаться на бесплатный разбор рациона"
               ratio="16 / 9"
-              className="border-white/25 bg-white/10 [&_span]:text-white/70 [&_svg]:text-white/70"
+              className="ring-1 ring-white/20"
             />
             <div className="mt-8 rounded-2xl bg-white p-6">
               <LeadForm note={null} id="signup-final" />

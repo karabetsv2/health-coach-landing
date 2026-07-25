@@ -1,6 +1,6 @@
 import Container from '../Container'
 import Reveal from '../Reveal'
-import ImagePlaceholder from '../ImagePlaceholder'
+import Photo from '../Photo'
 import LeadForm from '../LeadForm'
 import { Check } from 'lucide-react'
 
@@ -42,9 +42,11 @@ export default function Hero() {
           </div>
         </Reveal>
         <Reveal delay={0.15}>
-          <ImagePlaceholder
-            label="Фото: женщина в кухне (улыбается, готовит простое блюдо) + инфографика «5–15 кг за 90 дней». 1920×1080"
+          <Photo
+            src="/images/hero.jpg"
+            alt="Женщина готовит на кухне здоровое блюдо из свежих овощей"
             ratio="16 / 9"
+            priority
           />
         </Reveal>
       </Container>

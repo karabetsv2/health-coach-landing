@@ -1,6 +1,6 @@
 import Container from '../Container'
 import Reveal from '../Reveal'
-import ImagePlaceholder from '../ImagePlaceholder'
+import Photo from '../Photo'
 import Button from '../Button'
 
 const points = [
@@ -17,8 +17,9 @@ export default function Problem() {
     <section className="bg-white py-14 lg:py-20">
       <Container className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-14">
         <Reveal className="order-2 lg:order-1">
-          <ImagePlaceholder
-            label="Вертикальное фото: женщина у зеркала (с отражением, задумчивое настроение, без фейкового «до/после»). 800×1000"
+          <Photo
+            src="/images/problem.jpg"
+            alt="Женщина задумчиво смотрит на своё отражение в зеркале"
             ratio="4 / 5"
             className="mx-auto max-w-sm"
           />
