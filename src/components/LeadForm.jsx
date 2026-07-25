@@ -139,7 +139,26 @@ export default function LeadForm({ note, id = 'signup' }) {
               className="mt-0.5 h-5 w-5 shrink-0 cursor-pointer rounded border-2 border-forest/30 text-forest accent-forest"
             />
             <span className="font-body text-sm text-forest/80">
-              Я даю согласие на обработку персональных данных
+              Я даю{' '}
+              <a
+                href="/consent.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+                className="underline hover:text-forest"
+              >
+                согласие на обработку персональных данных
+              </a>{' '}
+              в соответствии с{' '}
+              <a
+                href="/privacy.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+                className="underline hover:text-forest"
+              >
+                Политикой конфиденциальности
+              </a>
             </span>
           </label>
           {errors.consent && <p className={errorClass}>{errors.consent}</p>}
